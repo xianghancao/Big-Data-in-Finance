@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>金融大数据的应用场景 &#8212; 金融大数据</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '1_导论/1.2 金融大数据的应用场景';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="道德与法律" href="1.3%20%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E5%BE%8B.html" />
+    <link rel="prev" title="大数据的背景" href="1.1_%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%9A%84%E8%83%8C%E6%99%AF.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../%E9%A6%96%E9%A1%B5.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo-min.png" class="logo__image only-light" alt="金融大数据 - Home"/>
+    <script>document.write(`<img src="../_static/logo-min.png" class="logo__image only-dark" alt="金融大数据 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../%E9%A6%96%E9%A1%B5.html">
+                    课程首页
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="1.0_%E5%AF%BC%E8%AE%BA.html">导论</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1.1_%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%9A%84%E8%83%8C%E6%99%AF.html">大数据的背景</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">金融大数据的应用场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.3%20%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E5%BE%8B.html">道德与法律</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%E4%BD%9C%E4%B8%9A.html">作业</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/1_导论/1.2 金融大数据的应用场景.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>金融大数据的应用场景</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 大数据技术降低信贷违约风险</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 投资者情绪预警股市风险</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 基于航运数据进行期货套利交易</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 停车场的卫星照片预知股价下跌</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">讨论：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">参考</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>金融大数据的应用场景<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>在过去数十年，随着大数据、人工智能、区块链、云计算等前沿技术的快速发展，越来越多的技术被应用于金融服务和提升金融行业的效率和安全。</p>
+<section id="id2">
+<h2>1. 大数据技术降低信贷违约风险<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>信贷分析是由贷款人为了评估潜在借款人的信用状况而进行的一项流程，旨在了解借款人偿还本金和利息债务的能力和可能性。</p>
+<ul class="simple">
+<li><p>借款人，也称为债务人，可以是个人或商业实体；前者被称为零售（或个人）贷款，后者被称为商业贷款。</p></li>
+<li><p>贷款人，也称为债权人，会采用各种定性和定量技术（包括风险模型）来量化和有效地定价风险。</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/load_risk.png"><img alt="../_images/load_risk.png" src="../_images/load_risk.png" style="width: 300px;" /></a>
+<p>传统的信用评估主要依靠借款人的信用记录，例如还款历史、负债率等进行评估。然而，这种方法存在以下局限性。1）数据维度有限: 传统信用评估主要依赖于银行等金融机构提供的信贷数据，数据维度有限，无法全面刻画借款人的信用状况。2）评估模型简单: 传统信用评估模型通常采用线性回归等简单模型，缺乏对非线性关系的捕捉能力。3）评估结果不够精准: 传统信用评估方法容易受到人为因素的影响，导致评估结果不够精准。</p>
+<p>大数据技术和机器学习算法的应用为信用评估带来了新的机遇。大数据技术可以从互联网、社交媒体等多个维度采集数据，丰富借款人的信用画像，全面刻画借款人的信用状况。机器学习算法可以学习数据中的非线性关系，构建更加复杂的评估模型，并提高评估效率。在决策过程中，帮助金融机构更准确地评估借款人的信用风险，从而做出更合理的贷款审批决策。在放款后，帮助金融机构根据借款人的信用状况动态调整信贷额度。最终，帮助金融机构识别潜在的信用风险，降低信贷违约率。</p>
+</section>
+<section id="id3">
+<h2>2. 投资者情绪预警股市风险<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>美国投资者的协会情绪调查 (AAII)每周都会对美国投资者进行情绪调查，调查内容包括投资者对未来六个月股市的乐观程度、悲观程度以及中立程度。
+研究表明，AAII 调查指数与股市走势具有负相关关系，当AAII 调查指数过高时，往往预示着股市即将下跌。</p>
+<p><a class="reference internal" href="../_images/emotion.png"><img alt="../_images/emotion.png" src="../_images/emotion.png" style="width: 350px;" /></a> <a class="reference internal" href="../_images/AAII.png"><img alt="../_images/AAII.png" src="../_images/AAII.png" style="width: 360px;" /></a></p>
+<p>基于投资者情绪的股市风险预警是一种通过分析投资者情绪指标来预测股市风险的方法。投资者情绪指标可以包括市场情绪指数、投资者情绪调查、新闻情绪指标等。这些指标可以反映投资者对市场的情绪和情感态度，如恐惧、贪婪、乐观等。通过监测和分析这些指标的变化，可以提前发现投资者情绪的转变，从而预测股市的风险水平。这种方法可以帮助投资者和金融机构更好地把握市场情绪，及时调整投资策略，降低投资风险。</p>
+</section>
+<section id="id4">
+<h2>3. 基于航运数据进行期货套利交易<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>基于航运数据的期货套利交易是一种利用航运数据进行期货市场套利的交易策略。航运数据包括船舶运输量、航线运输成本、港口拥堵情况等信息。这些数据可以反映全球贸易活动和供应链运输情况。基于这些数据，交易者可以分析和预测航运市场的供需关系和价格变动趋势。</p>
+<p><img alt="航运数据" src="../_images/shipping_data.png" /></p>
+<p>在期货市场中，交易者可以通过买入或卖出相关期货合约来参与航运市场的套利交易。如何操作呢？</p>
+<ul class="simple">
+<li><p>如果航运数据显示供应过剩，运输成本下降，交易者可以预测航运市场价格下跌，然后在期货市场上卖出相关期货合约，以获得价格下跌的收益。</p></li>
+<li><p>相反，如果航运数据显示供应紧张，运输成本上升，交易者可以预测航运市场价格上涨，然后在期货市场上买入相关期货合约，以获得价格上涨的收益。</p></li>
+</ul>
+<p>举例：</p>
+<ul class="simple">
+<li><p><strong>2021年集装箱运价暴涨</strong>：2021年，全球新冠疫情导致供应链中断，集装箱运输需求激增，运价大幅上涨。一些交易者利用航运数据分析了全球集装箱运输供需关系，预测运价将继续上涨，并在期货市场上买入了集装箱运价期货合约，获得了丰厚收益。</p></li>
+<li><p><strong>2023年航运市场低迷</strong>：2023年，全球经济增长放缓，贸易活动下降，航运市场需求减弱，运价大幅下跌。一些交易者利用航运数据分析了全球贸易活动和供应链运输情况，预测运价将继续下跌，并在期货市场上卖出了航运运价期货合约，获得了收益。</p></li>
+</ul>
+<p>这种基于航运数据的期货套利交易策略可以帮助交易者利用航运市场的信息来进行风险管理和投资决策，以获取更好的投资回报。</p>
+</section>
+<section id="id5">
+<h2>4. 停车场的卫星照片预知股价下跌<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>2015年10月，Chipotle(墨西哥卷饼连锁店)遭遇了一次严重的食品安全危机，有顾客在弗吉尼亚州的Chipotle餐厅就餐后生病，导致Chipotle不得不关停弗吉尼亚州内的43家门店进行消毒，其他门店的单店营收也下滑30-50%。在一连串食源性疾病爆发后，Chipotle的销售额骤降，2016年1月，当时Chipotle的同店销售额下降约36%。</p>
+<a class="reference internal image-reference" href="../_images/Chipotle.png"><img alt="../_images/Chipotle.png" src="../_images/Chipotle.png" style="width: 300px;" /></a>
+<p><a class="reference internal" href="../_images/Orbital2.png"><img alt="../_images/Orbital2.png" src="../_images/Orbital2.png" style="width: 305px;" /></a>  <a class="reference internal" href="../_images/Orbital3.png"><img alt="../_images/Orbital3.png" src="../_images/Orbital3.png" style="width: 300px;" /></a></p>
+<p>食品安全危机发生后，Orbital Insights（一家卫星公司）利用卫星图像分析了 Chipotle 餐厅外的停车流量。他们发现，在食品安全危机爆发后，停车流量出现了明显下降。于是，将这一发现告知了其客户，帮助他们提前获知了Chipotle 股价下跌的消息。</p>
+<p>卫星照片预知股价下跌的方法虽然有一定的理论基础和应用潜力，但也存在一些限制和挑战。例如，数据分析的准确性可能受到卫星图像分辨率和采集频率的限制，以及数据解释的主观性影响。此外，股价受多种因素影响，单一数据源可能无法全面反映市场的复杂变化。</p>
+<section id="id6">
+<h3>讨论：<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>假如你拥有了一颗卫星，你会怎样将其应用于金融市场？</p></li>
+<li><p>大数据技术还可以应用到哪些金融场景？</p></li>
+</ol>
+</section>
+</section>
+<section id="id7">
+<h2>参考<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>美国-AAII 散户投资人情绪指数，https://www.aaii.com/sentiment-survey</p></li>
+<li><p>orbital insight公司, https://orbitalinsight.com</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./1_导论"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="1.1_%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%9A%84%E8%83%8C%E6%99%AF.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">大数据的背景</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="1.3%20%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E5%BE%8B.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">道德与法律</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. 大数据技术降低信贷违约风险</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2. 投资者情绪预警股市风险</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3. 基于航运数据进行期货套利交易</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 停车场的卫星照片预知股价下跌</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">讨论：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">参考</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By CXH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
